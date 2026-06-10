@@ -87,7 +87,7 @@ export function SiteHeader({ school }: SiteHeaderProps) {
             className="hidden items-center gap-3 rounded-full px-6 py-3 text-xs font-bold uppercase tracking-[0.22em] text-white shadow-sm transition-all hover:scale-[1.02] md:flex"
             style={{ backgroundColor: school.primaryColor }}
           >
-            Contact
+            Login
             <span className="flex h-8 w-8 items-center justify-center rounded-full bg-white/20">
               <ArrowUpRight size={18} />
             </span>
