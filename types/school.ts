@@ -44,9 +44,28 @@ export interface AcademicProgram {
 
 export interface WhyChooseItem {
   id: string
-  icon: string
   title: string
   description: string
+}
+
+export interface SchoolBranch {
+  name: string
+  latitude: number
+  longitude: number
+}
+
+export interface AchievementItem {
+  id: string
+  icon: string
+  value: string
+  label: string
+}
+
+export interface AchievementsSection {
+  title: string
+  description: string
+  image: string
+  items: AchievementItem[]
 }
 
 export interface ContactInfo {
@@ -82,13 +101,14 @@ export interface School {
   primaryColor: string
   secondaryColor: string
   accentColor: string
- branches?: string[]
+  branches?: SchoolBranch[]
   hero: HeroSection
   about: AboutSection
   missionVision: MissionVision
   coreValues: CoreValue[]
   academicPrograms: AcademicProgram[]
   whyChooseUs: WhyChooseItem[]
+  achievements?: AchievementsSection
   contact: ContactInfo
   footer: FooterData
 }

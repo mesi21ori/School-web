@@ -13,9 +13,9 @@ export function HeroSection({ school }: HeroSectionProps) {
     return (
         <section
             id="hero"
-            className="relative min-h-screen w-full overflow-hidden bg-[#f7faf6] pt-14 pb-2"
+            className="relative min-h-screen w-full overflow-hidden bg-[#f7faf6] pt-34 pb-2 md:pt-20 lg:pt-8"
         >
-            <div className="grid min-h-[calc(100vh-7rem)] w-full grid-cols-1 items-center gap-12 px-8 sm:px-10 lg:grid-cols-2 lg:px-20 xl:px-24 2xl:px-32">
+            <div className="grid min-h-[calc(100vh-7rem)] w-full grid-cols-1 items-center gap-12 px-8 sm:px-10 lg:grid-cols-2 lg:px-20 xl:px-24 2xl:px-32 ">
                 {/* Left Content */}
                 <div className="max-w-3xl">
                     <h1 className="text-center font-serif text-3xl font-bold leading-[1.08] tracking-tight text-slate-900 sm:text-6xl lg:text-left lg:text-7xl">

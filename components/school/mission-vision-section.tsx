@@ -1,73 +1,63 @@
-"use client"
+"use client";
 
-import Image from "next/image"
-import { School } from "@/types/school"
-import { Eye, Lightbulb, Target } from "lucide-react"
+import Image from "next/image";
+import { School } from "@/types/school";
+import { Eye, Lightbulb, Target } from "lucide-react";
 
 interface MissionVisionSectionProps {
-  school: School
+  school: School;
 }
 
 export function MissionVisionSection({ school }: MissionVisionSectionProps) {
-  const imageUrl = school.hero?.imageUrl || "/images/default-mission.jpg"
+  const imageUrl = school.hero?.imageUrl || "/images/default-mission.jpg";
 
   const items = [
     {
-      title: school.missionVision.vision.title || "Our Vision",
-      description: school.missionVision.vision.description,
+      title: school.missionVision?.vision?.title || "Our Vision",
+      description: school.missionVision?.vision?.description || "To be a leading educational institution that nurtures future leaders.",
       icon: Eye,
       offset: "lg:ml-10",
     },
     {
-      title: school.missionVision.mission.title || "Our Mission",
-      description: school.missionVision.mission.description,
+      title: school.missionVision?.mission?.title || "Our Mission",
+      description: school.missionVision?.mission?.description || "To provide quality education that empowers students with knowledge, skills, and values.",
       icon: Lightbulb,
       offset: "lg:ml-0",
     },
     {
-      title: "Goals",
+      title: "Our Goals",
       description:
         "To support students with quality education, strong values, modern learning, and confidence for future success.",
       icon: Target,
       offset: "lg:ml-12",
     },
-  ]
+  ];
 
   return (
-    <section
-      id="mission"
-       className="relative min-h-screen w-full overflow-hidden bg-[#f7faf6] pt-14 pb-2"
-    >
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        {/* Section Title */}
-        <div className="mb-8 text-center">
-          <h2 className="text-4xl font-black tracking-tight text-slate-950 sm:text-5xl">
-            Our Mission
+    <section id="mission" className="py-20 bg-secondary/20">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Header - Same size as About and Contact sections */}
+        <div className="text-center mb-12">
+          <h2
+            className="text-4xl md:text-5xl font-bold mb-4"
+            style={{ color: school.primaryColor }}
+          >
+            Our Mission & Vision
           </h2>
-
-          <div className="mt-4 flex items-center justify-center gap-2">
-            <span className="h-px w-16 bg-slate-400" />
-            <span
-              className="h-2.5 w-2.5 rotate-45"
-              style={{ backgroundColor: school.accentColor }}
-            />
-            <span
-              className="h-2.5 w-2.5 rotate-45"
-              style={{ backgroundColor: school.accentColor }}
-            />
-            <span
-              className="h-2.5 w-2.5 rotate-45"
-              style={{ backgroundColor: school.accentColor }}
-            />
-            <span className="h-px w-16 bg-slate-400" />
-          </div>
+          <p className="text-muted-foreground max-w-2xl mx-auto">
+            Guiding principles that drive our commitment to excellence in education
+          </p>
+          <div
+            className="w-20 h-1 mx-auto mt-4 rounded-full"
+            style={{ backgroundColor: school.accentColor || school.primaryColor }}
+          />
         </div>
 
         <div className="grid grid-cols-1 items-center gap-8 lg:grid-cols-[52%_48%]">
           {/* Left Content */}
           <div className="space-y-8">
             {items.map((item, index) => {
-              const Icon = item.icon
+              const Icon = item.icon;
 
               return (
                 <div
@@ -88,16 +78,19 @@ export function MissionVisionSection({ school }: MissionVisionSectionProps) {
                   </div>
 
                   <div>
-                    <h3 className="text-2xl font-extrabold text-slate-950">
+                    <h3
+                      className="text-2xl font-extrabold"
+                      style={{ color: school.primaryColor }}
+                    >
                       {item.title}
                     </h3>
 
-                    <p className="mt-1 max-w-md text-sm leading-6 text-slate-700">
+                    <p className="mt-1 max-w-md text-sm leading-6 text-muted-foreground">
                       {item.description}
                     </p>
                   </div>
                 </div>
-              )
+              );
             })}
           </div>
 
@@ -176,5 +169,5 @@ export function MissionVisionSection({ school }: MissionVisionSectionProps) {
         </div>
       </div>
     </section>
-  )
+  );
 }

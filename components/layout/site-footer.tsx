@@ -1,23 +1,42 @@
 "use client"
 
 import { School } from "@/types/school"
-import { Share2, Loader, Lightbulb, Heart } from "lucide-react"
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaLinkedinIn,
+  FaTelegram,
+  FaYoutube,
+  FaXTwitter,
+} from "react-icons/fa6"
 
 interface SiteFooterProps {
   school: School
 }
 
 const getIcon = (iconName: string, size: number = 20) => {
-  const props = { size }
   switch (iconName) {
     case "Facebook":
-      return <Share2 {...props} />
+      return <FaFacebookF size={size} />
+
     case "Instagram":
-      return <Heart {...props} />
-    case "Twitter":
-      return <Lightbulb {...props} />
+      return <FaInstagram size={size} />
+
+    case "LinkedIn":
     case "Linkedin":
-      return <Loader {...props} />
+      return <FaLinkedinIn size={size} />
+
+    case "Telegram":
+    case "Send":
+      return <FaTelegram size={size} />
+
+    case "YouTube":
+    case "Youtube":
+      return <FaYoutube size={size} />
+
+    case "Twitter":
+      return <FaXTwitter size={size} />
+
     default:
       return null
   }
@@ -25,56 +44,97 @@ const getIcon = (iconName: string, size: number = 20) => {
 
 export function SiteFooter({ school }: SiteFooterProps) {
   return (
-    <footer className="bg-foreground text-background py-16">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Main Footer Content */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
-          {/* Brand Info */}
-          <div>
-            <h3 className="text-2xl font-bold mb-4">{school.name}</h3>
-            <p className="text-sm text-background/80">{school.footer.description}</p>
-          </div>
-
-          {/* Quick Links */}
-          <div>
-            <h4 className="font-semibold text-lg mb-4">Quick Links</h4>
-            <ul className="space-y-2">
-              {school.footer.quickLinks.map((link) => (
-                <li key={link.href}>
-                  <a
-                    href={link.href}
-                    className="text-sm text-background/80 hover:text-background transition-colors"
-                  >
-                    {link.label}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Social Links */}
-          <div>
-            <h4 className="font-semibold text-lg mb-4">Follow Us</h4>
-            <div className="flex gap-4">
-              {school.footer.socialLinks.map((link) => (
-                <a
-                  key={link.platform}
-                  href={link.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-background/80 hover:text-background transition-colors"
-                  aria-label={link.platform}
-                >
-                  {getIcon(link.icon)}
-                </a>
-              ))}
-            </div>
-          </div>
+    <footer
+      className="py-10"
+      style={{
+        backgroundColor: school.primaryColor,
+        color: school.secondaryColor,
+      }}
+    >
+      <div className="max-w-4xl mx-auto px-4 text-center">
+        {/* Social Icons */}
+        <div className="flex items-center justify-center gap-6 mb-6">
+          {school.footer.socialLinks.map((link) => (
+            <a
+              key={link.platform}
+              href={link.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={link.platform}
+              className="transition-all duration-300 hover:scale-110"
+              style={{
+                color: school.accentColor,
+              }}
+            >
+              {getIcon(link.icon, 20)}
+            </a>
+          ))}
         </div>
 
-        {/* Divider */}
-        <div className="border-t border-background/20 pt-8">
-          <p className="text-center text-sm text-background/70">
+        {/* Accent Divider */}
+        <div
+          className="w-14 h-[2px] mx-auto rounded-full mb-6"
+          style={{
+            backgroundColor: school.accentColor,
+          }}
+        />
+
+        {/* Description */}
+        <p
+          className="max-w-2xl mx-auto text-xs md:text-sm leading-relaxed mb-6"
+          style={{
+            color: school.secondaryColor,
+            opacity: 0.85,
+          }}
+        >
+          {school.footer.description}
+        </p>
+
+        {/* Logo / School Name */}
+        <div className="mb-5">
+          {school.logo ? (
+            <img
+              src={school.logo}
+              alt={school.name}
+              className="h-12 mx-auto object-contain"
+            />
+          ) : (
+            <h2
+              className="text-2xl md:text-3xl font-bold tracking-wide"
+              style={{
+                color: school.accentColor,
+              }}
+            >
+              {school.name}
+            </h2>
+          )}
+        </div>
+
+        {/* Location */}
+        <p
+          className="text-xs mb-3"
+          style={{
+            color: school.secondaryColor,
+            opacity: 0.85,
+          }}
+        >
+          Addis Ababa, Ethiopia
+        </p>
+
+        {/* Copyright */}
+        <div
+          className="border-t pt-4 mt-4"
+          style={{
+            borderColor: `${school.secondaryColor}25`,
+          }}
+        >
+          <p
+            className="text-[11px]"
+            style={{
+              color: school.secondaryColor,
+              opacity: 0.65,
+            }}
+          >
             © {new Date().getFullYear()} {school.name}. All rights reserved.
           </p>
         </div>

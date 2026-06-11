@@ -3,27 +3,67 @@ import { School } from "@/types/school"
 
 export const mockSchool: School = {
   id: "yeka-michael-school",
-  name: "Yeka Michael School",
-  logo: "/yeka-michael-logo.png",
+  name: "Ozone School",
+  logo: "/ozone-school-logo.png",
   description:
     "Yeka Michael School is dedicated to nurturing academic excellence, strong character, and holistic development from Kindergarten to Grade 12.",
-  primaryColor: "#142247", 
-  secondaryColor: "#F8F5EF", 
-  accentColor: "#D9A64A",
+primaryColor: "#0B3558", // deep navy blue from the logo ring
+secondaryColor: "#F8E9B8", // warm cream/gold background
+accentColor: "#D9A64A", // gold border/text color
 branches: [
-    "MAIN CAMPUS / YEKA",
-    "BOLE BRANCH",
-    "SUMMIT BRANCH",
-    "AYAT BRANCH",
-    "PIASSA BRANCH",
-    "SARIS BRANCH",
-    "MEXICO BRANCH",
-    "22 MAZORIA BRANCH",
-    "CMC BRANCH",
-    "LEBU BRANCH"
-  ],
+  {
+    name: "MAIN CAMPUS / YEKA",
+    latitude: 9.0357,
+    longitude: 38.7895,
+  },
+  {
+    name: "BOLE BRANCH",
+    latitude: 8.9806,
+    longitude: 38.7578,
+  },
+  {
+    name: "SUMMIT BRANCH",
+    latitude: 9.0261,
+    longitude: 38.8684,
+  },
+  {
+    name: "AYAT BRANCH",
+    latitude: 9.0299,
+    longitude: 38.8802,
+  },
+  {
+    name: "PIASSA BRANCH",
+    latitude: 9.0369,
+    longitude: 38.7516,
+  },
+  {
+    name: "SARIS BRANCH",
+    latitude: 8.9357,
+    longitude: 38.7578,
+  },
+  {
+    name: "MEXICO BRANCH",
+    latitude: 9.0105,
+    longitude: 38.7418,
+  },
+  {
+    name: "22 MAZORIA BRANCH",
+    latitude: 9.0227,
+    longitude: 38.7809,
+  },
+  {
+    name: "CMC BRANCH",
+    latitude: 9.0192,
+    longitude: 38.8378,
+  },
+  {
+    name: "LEBU BRANCH",
+    latitude: 8.9587,
+    longitude: 38.7045,
+  },
+],
   hero: {
-    title: "Nurturing Excellence from Kindergarten to Grade 12.",
+   title: "Inclusive Education That Celebrates Diversity.",
     subtitle:
       "High-quality education based on the Ethiopian curriculum in a caring, modern, and supportive learning environment.",
     imageUrl: "/school-hero.png",
@@ -123,50 +163,77 @@ branches: [
     },
   ],
 
-  whyChooseUs: [
+ whyChooseUs: [
+  {
+    id: "admissions",
+    title: "Admissions",
+    description:
+      "Ozone School has online and offline admission options for students from all over the world. Visit our website or campus to apply for our programs.",
+  },
+  {
+    id: "skilled-teachers",
+    title: "Skilled Teachers",
+    description:
+      "Ozone School's lecturers are experts in their fields, dedicated to providing innovative and engaging education for future success.",
+  },
+  {
+    id: "exploration",
+    title: "Our Dedication on Exploration",
+    description:
+      "Ozone School promotes exploration as a key value for learning and discovery, encouraging students to pursue curiosity and passions.",
+  },
+  {
+    id: "inclusive-education",
+    title: "Inclusive Education",
+    description:
+      "We create a welcoming learning culture that values unity, diversity, respect, and equal opportunity for every student.",
+  },
+  {
+    id: "modern-learning",
+    title: "Modern Learning",
+    description:
+      "Our classrooms support active learning, discussion, creativity, technology use, and student-centered teaching methods.",
+  },
+  {
+    id: "student-growth",
+    title: "Student Growth",
+    description:
+      "We support academic achievement, confidence, discipline, leadership, creativity, and strong character development.",
+  },
+],
+
+achievements: {
+  title: "Achievements",
+  description:
+    "A proud journey of academic excellence, dedicated teaching, and continuous growth in our school community.",
+  image: "/achievement.jpg",
+  items: [
     {
-      id: "ethiopian-curriculum",
-      icon: "BookMarked",
-      title: "Ethiopian Curriculum",
-      description:
-        "A complete KG to Grade 12 academic program aligned with the Ethiopian curriculum and national learning goals.",
-    },
-    {
-      id: "experienced-teachers",
-      icon: "Award",
-      title: "Experienced Teachers",
-      description:
-        "Dedicated and caring teachers support students academically, socially, and morally throughout their school journey.",
-    },
-    {
-      id: "modern-learning",
-      icon: "Laptop",
-      title: "Modern Learning Methods",
-      description:
-        "Classroom learning is supported by active teaching methods, technology, discussion, and continuous assessment.",
-    },
-    {
-      id: "exam-preparation",
+      id: "students",
       icon: "GraduationCap",
-      title: "Exam Preparation",
-      description:
-        "Students receive structured academic support to prepare for national examinations and higher education opportunities.",
+      value: "1750+",
+      label: "Students",
     },
     {
-      id: "safe-environment",
-      icon: "ShieldCheck",
-      title: "Safe Environment",
-      description:
-        "A caring, disciplined, and supportive school environment helps students learn with confidence and focus.",
+      id: "certified-teachers",
+      icon: "Award",
+      value: "106+",
+      label: "Certified Teachers",
     },
     {
-      id: "holistic-development",
-      icon: "Heart",
-      title: "Holistic Development",
-      description:
-        "We support academic achievement, character formation, leadership, creativity, sports, and emotional growth.",
+      id: "student-classes",
+      icon: "Building2",
+      value: "46+",
+      label: "Student Classes",
+    },
+    {
+      id: "years-excellence",
+      icon: "UserRoundCheck",
+      value: "20+",
+      label: "Years of Excellence",
     },
   ],
+},
 
   contact: {
     phone: "+251 000 000 000",
@@ -194,3 +261,6 @@ branches: [
     ],
   },
 }
+
+
+
