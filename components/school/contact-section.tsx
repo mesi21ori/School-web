@@ -115,7 +115,7 @@ export function ContactSection({ school }: ContactSectionProps) {
   }, [branches, centerLat, centerLng]);
 
   return (
-    <section id="contact" className="py-12 bg-secondary/20">
+    <section id="contact" className="py-12 bg-[#f7faf6] ">
       <div className="w-full px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-8">
           <h2

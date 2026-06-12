@@ -18,11 +18,11 @@ export function HeroSection({ school }: HeroSectionProps) {
             <div className="grid min-h-[calc(100vh-7rem)] w-full grid-cols-1 items-center gap-12 px-8 sm:px-10 lg:grid-cols-2 lg:px-20 xl:px-24 2xl:px-32 ">
                 {/* Left Content */}
                 <div className="max-w-3xl">
-                    <h1 className="text-center font-serif text-3xl font-bold leading-[1.08] tracking-tight text-slate-900 sm:text-6xl lg:text-left lg:text-7xl">
+                    <h1 className="text-center font-serif text-xl font-bold leading-[1.08] tracking-tight text-slate-900 sm:text-4xl lg:text-left lg:text-6xl">
                         {school.hero.title}
                     </h1>
 
-                    <p className="mx-auto mt-6 max-w-2xl text-center text-base leading-8 text-slate-700 sm:text-lg lg:mx-0 lg:text-left">
+                    <p className="mx-auto mt-6 max-w-2xl font-light text-center text-base leading-8 text-slate-700 sm:text-lg lg:mx-0 lg:text-left">
                         {school.hero.subtitle}
                     </p>
 

@@ -61,10 +61,30 @@ export interface AchievementItem {
   label: string
 }
 
+export interface PartnerItem {
+  id: string
+  name: string
+  logo: string
+}
+
+export interface AchievementCardImage {
+  image: string
+  title: string
+  description: string
+}
+
 export interface AchievementsSection {
   title: string
   description: string
   image: string
+  videoUrl?: string
+  imageCardOne?: string
+  imageCardTwo?: string
+
+  imageCardOneImages?: AchievementCardImage[]
+  imageCardTwoImages?: AchievementCardImage[]
+
+  partners?: PartnerItem[]
   items: AchievementItem[]
 }
 
@@ -111,4 +131,15 @@ export interface School {
   achievements?: AchievementsSection
   contact: ContactInfo
   footer: FooterData
+  ceo?: {
+  label?: string
+  name: string
+  role: string
+  image: string
+  since: string
+  shortBio: string
+  experienceTitle: string
+  experienceDescription: string
+  points: string[]
+}
 }

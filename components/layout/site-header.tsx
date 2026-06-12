@@ -125,7 +125,7 @@ export function SiteHeader({ school }: SiteHeaderProps) {
       >
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
-          <a href="/" className="flex items-center gap-3">
+          <a href="/" className="flex items-center gap- mt-1">
             {school.logo ? (
               <div className="relative h-20 w-20 overflow-hidden rounded-xl">
                 <Image

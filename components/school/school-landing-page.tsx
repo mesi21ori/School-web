@@ -11,6 +11,7 @@ import { AcademicProgramsSection } from "./academic-programs-section"
 import { ContactSection } from "./contact-section"
 import { WhyChooseUsSection } from "./WhyChooseUsSection"
 import { AchievementsSection } from "./achievements-section"
+import { CEOSection } from "./CEOSection"
 
 interface SchoolLandingPageProps {
   school: School
@@ -36,9 +37,10 @@ export function SchoolLandingPage({ school }: SchoolLandingPageProps) {
           <HeroSection school={school} />
           <WhyChooseUsSection school={school} />
           <AchievementsSection school={school} />
-          <AboutSection school={school} />
+          <CEOSection school={school} />
+          {/* <AboutSection school={school} />
           <MissionVisionSection school={school} />
-          <CoreValuesSection school={school} />
+          <CoreValuesSection school={school} /> */}
           <AcademicProgramsSection school={school} />
           <ContactSection school={school} />
         </main>
