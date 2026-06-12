@@ -131,15 +131,72 @@ export interface School {
   achievements?: AchievementsSection
   contact: ContactInfo
   footer: FooterData
+
   ceo?: {
-  label?: string
-  name: string
-  role: string
-  image: string
-  since: string
-  shortBio: string
-  experienceTitle: string
-  experienceDescription: string
-  points: string[]
+    label?: string
+    name: string
+    role: string
+    image: string
+    since: string
+    shortBio: string
+    experienceTitle: string
+    experienceDescription: string
+    points: string[]
+  }
 }
+
+export interface AboutSection {
+  title: string
+  subtitle?: string
+  description: string
+  image: string
+
+  intro?: {
+    eyebrow: string
+    title: string
+    shortText: string
+    paragraphs: string[]
+  }
+
+  story?: {
+    title: string
+    description: string
+    items: {
+      id: string
+      title: string
+      description: string
+      icon: string
+    }[]
+  }
+
+  curriculum?: {
+    title: string
+    description: string
+    tags: string[]
+    image?: string
+  }
+
+  naming?: {
+    title: string
+    subtitle: string
+    description: string
+    icon: string
+  }
+
+  outreach?: {
+    eyebrow: string
+    title: string
+    description: string
+    programs: {
+      id: string
+      title: string
+      description: string
+      icon: string
+    }[]
+  }
+
+  stats: {
+    label: string
+    value: string
+  }[]
 }

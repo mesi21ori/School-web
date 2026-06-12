@@ -4,9 +4,6 @@ import { School } from "@/types/school"
 import { SiteHeader } from "@/components/layout/site-header"
 import { SiteFooter } from "@/components/layout/site-footer"
 import { HeroSection } from "./hero-section"
-import { AboutSection } from "./about-section"
-import { MissionVisionSection } from "./mission-vision-section"
-import { CoreValuesSection } from "./core-values-section"
 import { AcademicProgramsSection } from "./academic-programs-section"
 import { ContactSection } from "./contact-section"
 import { WhyChooseUsSection } from "./WhyChooseUsSection"
@@ -38,8 +35,7 @@ export function SchoolLandingPage({ school }: SchoolLandingPageProps) {
           <WhyChooseUsSection school={school} />
           <AchievementsSection school={school} />
           <CEOSection school={school} />
-          {/* <AboutSection school={school} />
-          <MissionVisionSection school={school} />
+          {/* <MissionVisionSection school={school} />
           <CoreValuesSection school={school} /> */}
           <AcademicProgramsSection school={school} />
           <ContactSection school={school} />

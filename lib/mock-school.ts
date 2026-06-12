@@ -40,14 +40,103 @@ export const mockSchool: School = {
 
   about: {
     title: "About Ozone School",
+    subtitle: "Learn more about our journey, values, and global learning approach.",
     description:
-      "Ozone School is a private educational institution in Addis Ababa, Ethiopia, dedicated to quality education, inclusive learning, strong discipline, and holistic student development. The school supports learners through modern teaching methods, committed teachers, and a welcoming school community that values academic success, creativity, respect, and responsibility.",
+      "Ozone School provides international-standard education with a strong focus on academic excellence, character development, and holistic student growth.",
     image: "/school-about.png",
+
+    intro: {
+      eyebrow: "About Ozone School",
+      title: "About Us.",
+      shortText:
+        "Ozone School is built on an international educational model designed to prepare future generations with knowledge, confidence, and strong values.",
+      paragraphs: [
+        "Ozone International School was established in Riyadh, Saudi Arabia on September 17, 2006. It quickly rose to prominence as one of the top educational institutions in Riyadh, receiving accreditation from the Northwest Association in the United States.",
+        "Following the success of Ozone International in Saudi Arabia, a significant decision was made to replicate the same educational model in Addis Ababa. Ozone School was opened in September 2014 in Ethiopia.",
+        "Its primary objective is to equip the future generation of Ethiopia with the necessary skills and knowledge to lead the country and position it as a beacon for all of Africa and beyond.",
+      ],
+    },
+
+    story: {
+      title: "Our Story",
+      description:
+        "Ozone School has a long educational journey that began internationally and continued in Ethiopia with a vision for excellence.",
+      items: [
+        {
+          id: "riyadh-2006",
+          icon: "Trophy",
+          title: "Started in Riyadh",
+          description:
+            "Ozone International School was established in Riyadh, Saudi Arabia on September 17, 2006.",
+        },
+        {
+          id: "addis-2014",
+          icon: "GraduationCap",
+          title: "Opened in Ethiopia",
+          description:
+            "After success in Saudi Arabia, Ozone School opened in Addis Ababa, Ethiopia in September 2014.",
+        },
+        {
+          id: "international-standard",
+          icon: "Globe2",
+          title: "International Standard",
+          description:
+            "The school follows an international education model shaped by years of experience in the education sector.",
+        },
+      ],
+    },
+
+    curriculum: {
+      title: "Dynamic Curriculum",
+      description:
+        "Our dynamic curriculum balances sport, science, art, social activities, and more, ensuring a well-rounded education. We believe in nurturing every aspect of student growth through a mix of academics and extracurricular activities.",
+      tags: ["Sport", "Science", "Art", "Social Activities", "Academics"],
+      image: "/curriculum.png",
+    },
+
+    naming: {
+      icon: "Leaf",
+      title: "Why the name Ozone?",
+      subtitle: "Initial Naming of the School",
+      description:
+        "Ozone protects life on Earth by absorbing harmful UV rays. It symbolizes environmental health. At Ozone School, we nurture students who are committed to preserving our planet for a sustainable future.",
+    },
+
+    outreach: {
+      eyebrow: "Global Exposure",
+      title: "Outreach, Exposure & International Exchange",
+      description:
+        "Our school offers various programs to help students learn from different cultures and perspectives, and contribute to the global community and society.",
+      programs: [
+        {
+          id: "community-service",
+          icon: "HeartHandshake",
+          title: "Community Service",
+          description:
+            "Developing empathy, leadership, and civic responsibility through serving the local community and addressing social issues.",
+        },
+        {
+          id: "educational-tours",
+          icon: "Bus",
+          title: "Industrial Visits & Educational Tours",
+          description:
+            "Gaining practical knowledge and exposure to different fields and careers through visiting industries and educational institutions.",
+        },
+        {
+          id: "exchange-programs",
+          icon: "Globe2",
+          title: "International Exchange Programs",
+          description:
+            "Experiencing different academic systems, cultures, and languages through studying abroad in partner institutions.",
+        },
+      ],
+    },
+
     stats: [
-      { label: "Location", value: "Addis Ababa" },
-      { label: "Curriculum", value: "International" },
-      { label: "Learning Focus", value: "Holistic" },
-      { label: "Community", value: "Inclusive" },
+      { value: "2006", label: "Started in Riyadh" },
+      { value: "2014", label: "Opened in Ethiopia" },
+      { value: "20+", label: "Years in Education" },
+      { value: "Global", label: "Learning Exposure" },
     ],
   },
 
@@ -169,120 +258,120 @@ export const mockSchool: School = {
     },
   ],
 
- achievements: {
-  title: "Achievements",
-  description:
-    "A proud journey of academic excellence, dedicated teaching, inclusive education, and continuous growth in our school community.",
-  image: "/achievement.jpg",
-  videoUrl: "/achievement-video.mp4",
-  imageCardOne: "/achievement-card-1.jpg",
-  imageCardTwo: "/achievement-card-2.jpg",
+  achievements: {
+    title: "Achievements",
+    description:
+      "A proud journey of academic excellence, dedicated teaching, inclusive education, and continuous growth in our school community.",
+    image: "/achievement.jpg",
+    videoUrl: "/achievement-video.mp4",
+    imageCardOne: "/achievement-card-1.jpg",
+    imageCardTwo: "/achievement-card-2.jpg",
 
-  imageCardOneImages: [
-  {
-    image: "/achievement-card-1.jpg",
-    title: "Student Excellence",
-    description: "Celebrating our students’ academic growth and achievements.",
-  },
-  {
-    image: "/achievement-card-1-2.jpg",
-    title: "Creative Learning",
-    description: "Encouraging learners to explore ideas with confidence.",
-  },
-  {
-    image: "/achievement-card-1-3.jpg",
-    title: "Classroom Success",
-    description: "Supporting students through active and engaging lessons.",
-  },
-],
+    imageCardOneImages: [
+      {
+        image: "/achievement-card-1.jpg",
+        title: "Student Excellence",
+        description: "Celebrating our students’ academic growth and achievements.",
+      },
+      {
+        image: "/achievement-card-1-2.jpg",
+        title: "Creative Learning",
+        description: "Encouraging learners to explore ideas with confidence.",
+      },
+      {
+        image: "/achievement-card-1-3.jpg",
+        title: "Classroom Success",
+        description: "Supporting students through active and engaging lessons.",
+      },
+    ],
 
-imageCardTwoImages: [
-  {
-    image: "/achievement-card-2.jpg",
-    title: "Modern Facilities",
-    description: "Providing better learning spaces for student development.",
-  },
-  {
-    image: "/achievement-card-2-2.jpg",
-    title: "Supportive Environment",
-    description: "Creating a safe and caring space for every learner.",
-  },
-  {
-    image: "/achievement-card-2-3.jpg",
-    title: "Holistic Growth",
-    description: "Developing confidence, discipline, creativity, and character.",
-  },
-],
+    imageCardTwoImages: [
+      {
+        image: "/achievement-card-2.jpg",
+        title: "Modern Facilities",
+        description: "Providing better learning spaces for student development.",
+      },
+      {
+        image: "/achievement-card-2-2.jpg",
+        title: "Supportive Environment",
+        description: "Creating a safe and caring space for every learner.",
+      },
+      {
+        image: "/achievement-card-2-3.jpg",
+        title: "Holistic Growth",
+        description:
+          "Developing confidence, discipline, creativity, and character.",
+      },
+    ],
 
-  partners: [
-    {
-      id: "Mastercard-Foundation",
-      name: "Mastercard Foundation",
-      logo: "/Mastercard-Foundation.png",
-    },
-    {
-      id: "iceaddis",
-      name: "iceaddis",
-      logo: "/iceaddis.png",
-    },
-    {
-      id: "Reach-for-Change",
-      name: "Reach for Change",
-      logo: "/reach-for-change.png",
-    },
-    {
-      id: "Lucy-Bridge-Academy",
-      name: "Lucy Bridge Academy",
-      logo: "/Lucy-Bridge-Academy.png",
-    },
-    
-  ],
+    partners: [
+      {
+        id: "mastercard-foundation",
+        name: "Mastercard Foundation",
+        logo: "/Mastercard-Foundation.png",
+      },
+      {
+        id: "iceaddis",
+        name: "iceaddis",
+        logo: "/iceaddis.png",
+      },
+      {
+        id: "reach-for-change",
+        name: "Reach for Change",
+        logo: "/reach-for-change.png",
+      },
+      {
+        id: "lucy-bridge-academy",
+        name: "Lucy Bridge Academy",
+        logo: "/Lucy-Bridge-Academy.png",
+      },
+    ],
 
-  items: [
-    {
-      id: "graduates",
-      icon: "GraduationCap",
-      value: "1750+",
-      label: "Graduates",
-    },
-    {
-      id: "certified-teachers",
-      icon: "Award",
-      value: "106+",
-      label: "Certified Teachers",
-    },
-    {
-      id: "student-classes",
-      icon: "Building2",
-      value: "46+",
-      label: "Student Classes",
-    },
-    {
-      id: "students",
-      icon: "Users",
-      value: "1750+",
-      label: "Students",
-    },
-  ],
-},
+    items: [
+      {
+        id: "graduates",
+        icon: "GraduationCap",
+        value: "1750+",
+        label: "Graduates",
+      },
+      {
+        id: "certified-teachers",
+        icon: "Award",
+        value: "106+",
+        label: "Certified Teachers",
+      },
+      {
+        id: "student-classes",
+        icon: "Building2",
+        value: "46+",
+        label: "Student Classes",
+      },
+      {
+        id: "students",
+        icon: "Users",
+        value: "1750+",
+        label: "Students",
+      },
+    ],
+  },
 
-ceo: {
-  label: "Meet Our CEO",
-  name: "Ms. Hirut",
-  role: "Chief Executive Officer",
-  image: "/ceo.png",
-  since: "2006",
-  shortBio:
-    "A visionary school leader committed to academic excellence, modern learning, discipline, and holistic student development.",
-  experienceTitle: "CEO Experience",
-  experienceDescription:
-    "Our CEO brings strong leadership experience in education, school growth, student development, and community-centered learning.",
-  points: [
-    "Over 15 years of experience in education and leadership.",
-    "Focused on academic excellence, discipline, and innovation.",
-    "Committed to building a supportive learning community.",
-  ],
-},
+  ceo: {
+    label: "Meet Our CEO",
+    name: "Ms. Hirut",
+    role: "Chief Executive Officer",
+    image: "/ceo.png",
+    since: "2006",
+    shortBio:
+      "A visionary school leader committed to academic excellence, modern learning, discipline, and holistic student development.",
+    experienceTitle: "CEO Experience",
+    experienceDescription:
+      "Our CEO brings strong leadership experience in education, school growth, student development, and community-centered learning.",
+    points: [
+      "Over 15 years of experience in education and leadership.",
+      "Focused on academic excellence, discipline, and innovation.",
+      "Committed to building a supportive learning community.",
+    ],
+  },
 
   contact: {
     phone: "+251 11 660 6078",
