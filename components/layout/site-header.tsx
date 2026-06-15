@@ -203,7 +203,7 @@ export function SiteHeader({ school }: SiteHeaderProps) {
           {/* Desktop Login Button */}
           {/* Desktop Login Button */}
           <a
-            href="/login"
+            href="https://sm-erp.pilanop.fun/auth/sign-in"
             className="hidden items-center gap-3 rounded-full px-6 py-3 text-xs font-bold uppercase tracking-[0.22em] text-white shadow-sm transition-all hover:scale-[1.02] md:flex"
             style={{ backgroundColor: school.primaryColor }}
           >
@@ -291,7 +291,7 @@ export function SiteHeader({ school }: SiteHeaderProps) {
               {/* Mobile Login Button */}
               {/* Mobile Login Button */}
               <a
-                href="/login"
+                href="https://sm-erp.pilanop.fun/auth/sign-in"
                 className="mt-2 flex w-full items-center justify-center gap-3 rounded-full px-5 py-3 text-sm font-bold uppercase tracking-[0.18em] text-white"
                 style={{ backgroundColor: school.primaryColor }}
                 onClick={() => setIsMenuOpen(false)}
