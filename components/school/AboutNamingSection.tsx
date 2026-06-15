@@ -16,38 +16,62 @@ export function AboutNamingSection({ school }: Props) {
     (Icons[naming.icon as keyof typeof Icons] as React.ElementType) || Icons.Leaf
 
   return (
-    <section id="about-name" className="px-6 py-12 sm:px-10 lg:px-20 xl:px-24 2xl:px-32">
-      <div className="mx-auto max-w-7xl">
-        <div className="relative overflow-hidden bg-white p-8 shadow-lg ring-1 ring-slate-200 sm:p-10">
-          <div
-            className="absolute -right-20 -top-20 h-52 w-52 rounded-full opacity-10"
-            style={{ backgroundColor: school.primaryColor }}
-          />
-
-          <div
-            className="mb-6 flex h-14 w-14 items-center justify-center rounded-full"
-            style={{
-              backgroundColor: `${school.accentColor}25`,
-              color: school.primaryColor,
-            }}
+    <section
+      id="about-name"
+      className="relative overflow-hidden px-6 py-12 sm:px-10 lg:px-20 xl:px-24 2xl:px-32"
+      style={{ backgroundColor: school.secondaryColor }}
+    >
+      <div className="mx-auto max-w-4xl">
+        <div className="relative rounded-3xl bg-white/70 px-6 py-10 shadow-sm ring-1 ring-slate-200/70 backdrop-blur sm:px-10 lg:px-14">
+          {/* Opening quote */}
+          <span
+            className="absolute left-5 top-4 font-serif text-6xl font-black leading-none opacity-90 sm:text-7xl"
+            style={{ color: school.primaryColor }}
           >
-            <Icon size={25} />
-          </div>
+            “
+          </span>
 
-          <p
-            className="mb-3 text-xs font-bold uppercase tracking-[0.28em]"
+          {/* Closing quote */}
+          <span
+            className="absolute bottom-2 right-6 font-serif text-6xl font-black leading-none opacity-90 sm:text-7xl"
             style={{ color: school.accentColor }}
           >
-            {naming.subtitle}
-          </p>
+            ”
+          </span>
 
-          <h3 className="font-serif text-3xl font-bold text-slate-950 sm:text-4xl">
-            {naming.title}
-          </h3>
+          <div className="relative z-10 ml-8 sm:ml-12">
+            {/* Icon */}
+            <div
+              className="mb-5 flex h-10 w-10 items-center justify-center rounded-full"
+              style={{
+                backgroundColor: `${school.accentColor}22`,
+                color: school.primaryColor,
+              }}
+            >
+              <Icon size={20} />
+            </div>
 
-          <p className="mt-6 max-w-4xl text-sm leading-8 text-slate-600 sm:text-base">
-            {naming.description}
-          </p>
+            {/* Subtitle */}
+            <p
+              className="mb-3 text-[11px] font-bold uppercase tracking-[0.25em]"
+              style={{ color: school.accentColor }}
+            >
+              {naming.subtitle}
+            </p>
+
+            {/* Title */}
+            <h3
+              className="max-w-3xl font-serif text-3xl font-bold italic leading-tight sm:text-4xl lg:text-[44px]"
+              style={{ color: school.primaryColor }}
+            >
+              {naming.title}
+            </h3>
+
+            {/* Description */}
+            <p className="mt-5 max-w-3xl text-sm leading-7 text-slate-500 sm:text-[15px]">
+              {naming.description}
+            </p>
+          </div>
         </div>
       </div>
     </section>

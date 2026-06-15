@@ -77,11 +77,11 @@ export function SiteHeader({ school }: SiteHeaderProps) {
         },
         {
           label: "Apply for Admission",
-          href: "/admission/apply",
+          href: "/academics/admission",
         },
         {
           label: "Apply for Scholarship Program",
-          href: "/scholarship/apply",
+          href: "/academics/scholarship",
         },
       ],
     },
@@ -89,6 +89,7 @@ export function SiteHeader({ school }: SiteHeaderProps) {
       label: "News",
       href: "/news",
     },
+    
   ]
 
   const joinLinks = [

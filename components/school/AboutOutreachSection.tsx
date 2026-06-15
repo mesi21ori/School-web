@@ -14,28 +14,37 @@ export function AboutOutreachSection({ school }: Props) {
   if (!outreach) return null
 
   return (
-    <section id="about-outreach" className="px-6 py-12 sm:px-10 lg:px-20 xl:px-24 2xl:px-32">
+    <section
+      id="about-outreach"
+      className="px-6 py-12 sm:px-10 lg:px-20 xl:px-24 2xl:px-32"
+      style={{ backgroundColor: school.secondaryColor }}
+    >
       <div className="mx-auto max-w-7xl">
-        <div className="mb-10 grid gap-6 lg:grid-cols-[0.8fr_1.2fr]">
+        {/* Header */}
+        <div className="mb-8 grid items-end gap-5 lg:grid-cols-[0.75fr_1.25fr]">
           <div>
             <p
-              className="mb-3 text-xs font-bold uppercase tracking-[0.28em]"
+              className="mb-2 text-[11px] font-bold uppercase tracking-[0.25em]"
               style={{ color: school.accentColor }}
             >
               {outreach.eyebrow}
             </p>
 
-            <h3 className="font-serif text-4xl font-black uppercase leading-none text-slate-950 sm:text-5xl">
+            <h3
+              className="font-serif text-3xl font-black uppercase leading-tight sm:text-4xl lg:text-[44px]"
+              style={{ color: school.primaryColor }}
+            >
               {outreach.title}
             </h3>
           </div>
 
-          <p className="max-w-3xl text-sm leading-8 text-slate-600 sm:text-base">
+          <p className="max-w-3xl text-sm leading-7 text-slate-600 sm:text-[15px]">
             {outreach.description}
           </p>
         </div>
 
-        <div className="grid gap-5 md:grid-cols-3">
+        {/* Cards */}
+        <div className="grid gap-4 md:grid-cols-3">
           {outreach.programs.map((program) => {
             const Icon =
               (Icons[program.icon as keyof typeof Icons] as React.ElementType) ||
@@ -44,37 +53,40 @@ export function AboutOutreachSection({ school }: Props) {
             return (
               <div
                 key={program.id}
-                className="group relative overflow-hidden bg-white p-7 shadow-sm ring-1 ring-slate-200 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
+                className="group relative overflow-hidden rounded-3xl bg-white/80 p-6 shadow-sm ring-1 ring-slate-200/70 backdrop-blur transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
               >
+                {/* Top glow */}
+                <div
+                  className="absolute -right-10 -top-10 h-28 w-28 rounded-full opacity-10 transition-transform duration-500 group-hover:scale-125"
+                  style={{ backgroundColor: school.primaryColor }}
+                />
+
+                {/* Bottom line */}
                 <div
                   className="absolute bottom-0 left-0 h-1 w-full origin-left scale-x-0 transition-transform duration-500 group-hover:scale-x-100"
                   style={{ backgroundColor: school.primaryColor }}
                 />
 
-                <div
-                  className="mb-5 flex h-12 w-12 items-center justify-center rounded-full"
-                  style={{
-                    backgroundColor: `${school.primaryColor}15`,
-                    color: school.primaryColor,
-                  }}
-                >
-                  <Icon size={22} />
-                </div>
+                <div className="relative z-10">
+                  <div
+                    className="mb-4 flex h-11 w-11 items-center justify-center rounded-2xl"
+                    style={{
+                      backgroundColor: `${school.primaryColor}14`,
+                      color: school.primaryColor,
+                    }}
+                  >
+                    <Icon size={21} />
+                  </div>
 
-                <h4 className="text-lg font-bold text-slate-950">
-                  {program.title}
-                </h4>
+                  <h4 className="text-base font-bold text-slate-950 sm:text-lg">
+                    {program.title}
+                  </h4>
 
-                <p className="mt-3 text-sm leading-7 text-slate-600">
-                  {program.description}
-                </p>
+                  <p className="mt-3 text-sm leading-7 text-slate-600">
+                    {program.description}
+                  </p>
 
-                <div
-                  className="mt-6 inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.18em]"
-                  style={{ color: school.primaryColor }}
-                >
-                  Learn more
-                  <ArrowUpRight size={15} />
+                  
                 </div>
               </div>
             )

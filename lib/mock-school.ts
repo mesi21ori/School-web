@@ -28,7 +28,53 @@ export const mockSchool: School = {
       longitude: 38.8842,
     },
   ],
-
+news: [
+  {
+    id: "ozone-scholarship-2026",
+    title: "Ozone School Opens Scholarship Application for the New Academic Year",
+    category: "Scholarship",
+    date: "July 16, 2026",
+    author: "Ozone School",
+    image: "/news/news-1.jpg",
+    excerpt:
+      "Ozone School is now accepting scholarship applications for students who demonstrate strong academic potential and financial need.",
+    content: [
+      "Ozone School is pleased to announce that scholarship applications are now open for the new academic year. The program is designed to support talented and motivated students who need financial assistance.",
+      "Applicants will be reviewed based on academic performance, family financial background, personal motivation, and supporting documents.",
+      "Shortlisted students may be invited for an interview or academic assessment before final scholarship decisions are announced.",
+    ],
+  },
+  {
+    id: "dynamic-curriculum-update",
+    title: "Dynamic Curriculum Supports Academic and Creative Growth",
+    category: "Academics",
+    date: "July 18, 2026",
+    author: "Academic Office",
+    image: "/news/news-2.jpg",
+    excerpt:
+      "Our curriculum balances academics, sport, science, art, and social activities to support holistic student development.",
+    content: [
+      "Ozone School continues to strengthen its dynamic curriculum by combining academic learning with sport, science, art, and social activities.",
+      "This approach helps students develop confidence, creativity, teamwork, discipline, and problem-solving skills.",
+      "The school believes that strong education should prepare learners not only for exams, but also for life.",
+    ],
+  },
+  {
+    id: "parent-school-community",
+    title: "Building a Stronger School and Parent Community",
+    category: "Community",
+    date: "July 20, 2026",
+    author: "Student Affairs",
+    image: "/news/news-3.jpg",
+    excerpt:
+      "Ozone School continues to build strong relationships with parents to support student success and wellbeing.",
+    content: [
+      "A strong partnership between parents and the school plays an important role in student achievement.",
+      "Ozone School encourages regular communication, parent involvement, and shared responsibility in supporting learners.",
+      "Through collaboration, the school community can create a better learning environment for every student.",
+    ],
+  },
+], 
   hero: {
     title: "Inclusive Education That Celebrates Diversity.",
     subtitle:
@@ -139,6 +185,51 @@ export const mockSchool: School = {
       { value: "Global", label: "Learning Exposure" },
     ],
   },
+
+  team: [
+   {
+        name: "Ms. Hirut",
+        role: "Chief Executive Officer",
+        image: "/ceo.png",
+        bio: "A visionary school leader committed to academic excellence, discipline, and holistic student development.",
+      },
+      {
+        name: "Mr. Ahmed",
+        role: "Academic Director",
+        image: "/team/team-1.png",
+        bio: "Focused on curriculum quality, teacher support, and continuous improvement in learning outcomes.",
+      },
+      {
+        name: "Ms. Sara",
+        role: "School Principal",
+        image: "/team/team-2.png",
+        bio: "Dedicated to building a disciplined, caring, and high-performing school community.",
+      },
+      {
+        name: "Mr. Dawit",
+        role: "Student Affairs Head",
+        image: "/team/team-3.png",
+        bio: "Supports student growth, wellbeing, leadership, and strong school-family relationships.",
+      },
+      {
+        name: "Ms. Hana",
+        role: "Primary Coordinator",
+        image: "/team/team-4.png",
+        bio: "Guides primary education with care, structure, and student-centered support.",
+      },
+      {
+        name: "Mr. Samuel",
+        role: "Student Support Lead",
+        image: "/team/team-5.png",
+        bio: "Helps students build confidence, discipline, responsibility, and positive school habits.",
+      },
+      {
+        name: "Ms. Lidiya",
+        role: "Admissions Officer",
+        image: "/team/team-6.png",
+        bio: "Supports families through the admissions process with clear guidance and care.",
+      },
+  ],
 
   missionVision: {
     mission: {

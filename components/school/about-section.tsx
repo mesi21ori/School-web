@@ -13,7 +13,6 @@ import { AboutCurriculumSection } from "./AboutCurriculumSection"
 import { AboutIntroSection } from "./AboutIntroSection"
 import { AboutNamingSection } from "./AboutNamingSection"
 import { AboutOutreachSection } from "./AboutOutreachSection"
-import { AboutStatsSection } from "./AboutStatsSection"
 import { AboutStorySection } from "./AboutStorySection"
 
 interface SchoolLandingPageProps {
@@ -39,10 +38,9 @@ export function AboutSection({ school }: SchoolLandingPageProps) {
         <main className="flex-1">
           <AboutIntroSection school={school} />
           <AboutStorySection school={school} />
-          {/* <AboutCurriculumSection school={school} />
+          <AboutCurriculumSection school={school} />
           <AboutNamingSection school={school} />
           <AboutOutreachSection school={school} />
-          <AboutStatsSection school={school} /> */}
         </main>
 
         <SiteFooter school={school} />

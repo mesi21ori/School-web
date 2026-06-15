@@ -1,10 +1,9 @@
 // app/page.tsx
-import { AboutSection } from "@/components/school/about-section"
+import { GalleryPage } from "@/components/school/gallery-page"
 import { mockSchool } from "@/lib/mock-school"
 
 export default function Page() {
   return <
-     
-    AboutSection school={mockSchool}
+     GalleryPage school={mockSchool}
      />
 }

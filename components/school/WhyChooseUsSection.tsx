@@ -18,13 +18,7 @@ export function WhyChooseUsSection({ school }: WhyChooseUsSectionProps) {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="mb-16 text-center">
-          <p
-            className="mb-3 text-xs font-bold uppercase tracking-[0.28em]"
-            style={{ color: school.primaryColor }}
-          >
-            Some Reasons
-          </p>
-
+  
           <h2 className="text-4xl font-bold tracking-tight text-foreground md:text-5xl">
             Why Choose Us
           </h2>

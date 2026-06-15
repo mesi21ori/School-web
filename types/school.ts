@@ -113,6 +113,18 @@ export interface FooterData {
   socialLinks: SocialLink[]
 }
 
+export type NewsItem = {
+  id: string
+  title: string
+  category: string
+  date: string
+  author: string
+  image: string
+  excerpt: string
+  content: string[]
+}
+
+
 export interface School {
   id: string
   name: string
@@ -121,6 +133,7 @@ export interface School {
   primaryColor: string
   secondaryColor: string
   accentColor: string
+  team?: TeamMember[]
   branches?: SchoolBranch[]
   hero: HeroSection
   about: AboutSection
@@ -131,6 +144,7 @@ export interface School {
   achievements?: AchievementsSection
   contact: ContactInfo
   footer: FooterData
+  news:NewsItem[]
 
   ceo?: {
     label?: string
@@ -143,6 +157,15 @@ export interface School {
     experienceDescription: string
     points: string[]
   }
+}
+export type TeamMember = {
+  name: string
+  role: string
+  image: string
+  bio: string
+  email?: string
+  facebook?: string
+  linkedin?: string
 }
 
 export interface AboutSection {
@@ -199,4 +222,8 @@ export interface AboutSection {
     label: string
     value: string
   }[]
+
+  
 }
+
+
