@@ -37,7 +37,7 @@ export function AcademicProgramsSection({
   const displayPrograms = programs.length > 0 ? programs : [...defaultPrograms, ...defaultPrograms];
 
   return (
-    <section id="programs" className="py-20 bg-secondary/20 overflow-hidden">
+    <section id="programs" className="py-20 bg-secondary/20 overflow-hidden mt-10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header - Same size as other sections */}
         <div className="text-center mb-12">

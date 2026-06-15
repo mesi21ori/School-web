@@ -37,7 +37,7 @@ export function HeroSection({ school }: HeroSectionProps) {
                         </a>
 
                         <a
-                            href="#about"
+                            href="/about"
                             className="inline-flex h-12 items-center justify-center gap-2 rounded-full border bg-white px-7 text-sm font-bold shadow-sm transition-all hover:-translate-y-0.5 hover:shadow-md"
                             style={{
                                 borderColor: school.accentColor,

@@ -196,37 +196,37 @@ news: [
       {
         name: "Mr. Ahmed",
         role: "Academic Director",
-        image: "/team/team-1.png",
+        image: "/team-1.png",
         bio: "Focused on curriculum quality, teacher support, and continuous improvement in learning outcomes.",
       },
       {
         name: "Ms. Sara",
         role: "School Principal",
-        image: "/team/team-2.png",
+        image: "/team-2.png",
         bio: "Dedicated to building a disciplined, caring, and high-performing school community.",
       },
       {
         name: "Mr. Dawit",
         role: "Student Affairs Head",
-        image: "/team/team-3.png",
+        image: "/team-3.png",
         bio: "Supports student growth, wellbeing, leadership, and strong school-family relationships.",
       },
       {
         name: "Ms. Hana",
         role: "Primary Coordinator",
-        image: "/team/team-4.png",
+        image: "/team-4.png",
         bio: "Guides primary education with care, structure, and student-centered support.",
       },
       {
         name: "Mr. Samuel",
         role: "Student Support Lead",
-        image: "/team/team-5.png",
+        image: "/team-5.png",
         bio: "Helps students build confidence, discipline, responsibility, and positive school habits.",
       },
       {
         name: "Ms. Lidiya",
         role: "Admissions Officer",
-        image: "/team/team-6.png",
+        image: "/team-6.png",
         bio: "Supports families through the admissions process with clear guidance and care.",
       },
   ],
@@ -299,14 +299,6 @@ news: [
       description:
         "Structured academic learning that strengthens subject knowledge, study habits, responsibility, and exam readiness.",
       gradeRange: "Secondary",
-    },
-    {
-      id: "international-curriculum",
-      icon: "GraduationCap",
-      title: "International Curriculum",
-      description:
-        "A globally oriented academic program designed to prepare learners for higher education, problem-solving, and future opportunities.",
-      gradeRange: "International",
     },
   ],
 
@@ -446,23 +438,25 @@ news: [
     ],
   },
 
-  ceo: {
-    label: "Meet Our CEO",
-    name: "Ms. Hirut",
-    role: "Chief Executive Officer",
-    image: "/ceo.png",
-    since: "2006",
-    shortBio:
-      "A visionary school leader committed to academic excellence, modern learning, discipline, and holistic student development.",
-    experienceTitle: "CEO Experience",
-    experienceDescription:
-      "Our CEO brings strong leadership experience in education, school growth, student development, and community-centered learning.",
-    points: [
-      "Over 15 years of experience in education and leadership.",
-      "Focused on academic excellence, discipline, and innovation.",
-      "Committed to building a supportive learning community.",
-    ],
-  },
+ceo: {
+  label: "Meet Our General Assistant Manager",
+  name: "Ms. Hirut",
+  role: "General Assistant Manager",
+  image: "/ceo.png",
+  since: "2006",
+  shortBio:
+    "A dedicated school leader who supports daily school operations, student success, staff coordination, and a positive learning environment.",
+
+  experienceTitle: "Message from the General Assistant Manager",
+  experienceDescription:
+    "Welcome to our school community. As General Assistant Manager, my mission is to support students, parents, teachers, and the entire school team with care, discipline, and commitment. I believe that every student deserves a safe, inspiring, and well-organized learning environment where they can grow academically, socially, and morally. Together with our staff and families, we continue working to build a school culture based on excellence, respect, responsibility, and continuous improvement.",
+
+  points: [
+    "Committed to supporting students, teachers, and parents with dedication.",
+    "Focused on discipline, academic progress, and smooth school operations.",
+    "Dedicated to building a caring, respectful, and successful school community.",
+  ],
+},
 
   contact: {
     phone: "+251 11 660 6078",

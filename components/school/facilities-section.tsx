@@ -33,7 +33,7 @@ export function FacilitiesSection({ school }: FacilitiesSectionProps) {
       title: "Comfortable Bus Transportation",
       subtitle:
         "At Ozone School, we care about the safety and comfort of our students during their daily commute.",
-      image: "/facilities/bus.jpg",
+      image: "/facilities-bus.jpg",
       icon: Bus,
       badgeNumber: "01",
       badgeText: "Safe Transport",
@@ -48,7 +48,7 @@ export function FacilitiesSection({ school }: FacilitiesSectionProps) {
       title: "Smart Classrooms",
       subtitle:
         "Our smart classrooms are equipped with modern technology to enhance every student’s learning experience.",
-      image: "/facilities/smart-classroom.jpg",
+      image: "/facilities-smart-classroom.jpg",
       icon: MonitorSmartphone,
       badgeNumber: "02",
       badgeText: "Modern Learning",
@@ -64,7 +64,7 @@ export function FacilitiesSection({ school }: FacilitiesSectionProps) {
       title: "Science Laboratories",
       subtitle:
         "Our science laboratories support hands-on exploration in biology, chemistry, and physics.",
-      image: "/facilities/science-lab.jpg",
+      image: "/facilities-science-lab.jpg",
       icon: FlaskConical,
       badgeNumber: "03",
       badgeText: "Practical Science",
@@ -79,7 +79,7 @@ export function FacilitiesSection({ school }: FacilitiesSectionProps) {
       title: "Smart Library",
       subtitle:
         "The Smart Library is a vibrant learning space where curiosity, ideas, and discovery grow beyond the classroom.",
-      image: "/facilities/library.jpg",
+      image: "/facilities-library.jpg",
       icon: Library,
       badgeNumber: "04",
       badgeText: "Smart Library",

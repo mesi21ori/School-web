@@ -35,8 +35,6 @@ export function SchoolLandingPage({ school }: SchoolLandingPageProps) {
           <WhyChooseUsSection school={school} />
           <AchievementsSection school={school} />
           <CEOSection school={school} />
-          {/* <MissionVisionSection school={school} />
-          <CoreValuesSection school={school} /> */}
           <AcademicProgramsSection school={school} />
           <ContactSection school={school} />
         </main>
